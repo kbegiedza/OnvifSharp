@@ -1,0 +1,13 @@
+version: "3.9"
+
+networks:
+  development:
+    driver: bridge
+
+services:
+  vscode:
+    container_name: onvifsharp_vscode
+    image: ghcr.io/ulfsoft-harbour/dotnet/sdk-vscode:6.0
+    volumes:
+      - ../:/workspace:delegated
+    command: /bin/sh -c "while sleep 1000; do :; done"

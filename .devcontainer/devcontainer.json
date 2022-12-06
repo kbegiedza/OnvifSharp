@@ -1,0 +1,11 @@
+{
+    "name": "OnvifSharp developer",
+    "workspaceFolder": "/workspace",
+    "service": "vscode",
+    "dockerComposeFile": "./compose.yml",
+    "extensions": [
+        "ms-dotnettools.csharp"
+    ],
+    "postCreateCommand": "dotnet tool install --global dotnet-svcutil",
+    "shutdownAction": "stopCompose"
+}
