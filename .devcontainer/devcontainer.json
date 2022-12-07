@@ -6,6 +6,6 @@
     "extensions": [
         "ms-dotnettools.csharp"
     ],
-    "postCreateCommand": "dotnet tool install --global dotnet-svcutil",
+    "postCreateCommand": "git submodule update --init --recursive && dotnet tool install --global dotnet-svcutil",
     "shutdownAction": "stopCompose"
 }
