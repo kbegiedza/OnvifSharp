@@ -1,0 +1,4 @@
+[submodule "dep/onvif/specs"]
+	path = dep/onvif/specs
+	url = git@github.com:onvif/specs.git
+	branch = 22.12
